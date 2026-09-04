@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://homefeast-n8j6.onrender.com";
+const API_BASE_URL = "https://homefeast-n8j6.onrender.com/api";
 
 const apiRequest = async (endpoint, options = {}) => {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
