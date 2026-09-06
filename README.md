@@ -345,25 +345,37 @@ HomeFeast
 
 HomeFeast provides a modern landing page featuring homemade food, featured cooks, cuisine categories, and platform information.
 
+![Home Page](screenshots/home-page.png)
+
 ### 🍱 Browse Providers
 
 Customers can browse, search, and filter available home cooks and tiffin providers.
+
+![Browse Providers](screenshots/browse-providers.png)
 
 ### 👨‍🍳 Cook Details
 
 Customers can view cook information, meals, pricing, meal plans, and availability.
 
+![Cook Details](screenshots/cook-details.png)
+
 ### 👤 Customer Dashboard
 
 Customers can manage their profile, orders, and subscriptions.
+
+![Customer Dashboard](screenshots/customer-dashboard.png)
 
 ### 👨‍🍳 Cook Dashboard
 
 Cooks can manage their profile, meals, customer orders, and subscriptions.
 
+![Cook Dashboard](screenshots/cook-dashboard.png)
+
 ### 🛡️ Admin Dashboard
 
 Administrators can manage users, cooks, orders, subscriptions, categories, and complaints.
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ## 📱 Responsive Design
 
