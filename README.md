@@ -8,13 +8,13 @@ The platform allows customers to discover home cooks, explore available meals, p
 
 ## 🌐 Live Demo
 
-(https://homefeast-hub.netlify.app/)
+https://homefeast-hub.netlify.app/
 
 ---
 
 ## 💻 GitHub Repository
 
-(https://github.com/Aatiqueshaikh/HomeFeast)
+https://github.com/Aatiqueshaikh/HomeFeast
 
 ---
 
