@@ -149,98 +149,113 @@ Customer
 Cook
    │
 Admin
+```
 
 ### 🛠 Tech Stack
-Frontend
-React.js
-Vite
-Tailwind CSS
-React Router
-Lucide React
-JavaScript
-Backend
-Node.js
-Express.js
-REST API
-Database
-MongoDB Atlas
-Mongoose
-Authentication & Security
-JSON Web Token (JWT)
-bcryptjs
-Protected Routes
-Role-Based Authorization
-Deployment & Tools
-Netlify
-Render
-MongoDB Atlas
-GitHub
-GitHub Desktop
-🗄️ Database Models
+
+**Frontend**
+- React.js
+- Vite
+- Tailwind CSS
+- React Router
+- Lucide React
+- JavaScript
+
+**Backend**
+- Node.js
+- Express.js
+- REST API
+
+**Database**
+- MongoDB Atlas
+- Mongoose
+
+**Authentication & Security**
+- JSON Web Token (JWT)
+- bcryptjs
+- Protected Routes
+- Role-Based Authorization
+
+**Deployment & Tools**
+- Netlify
+- Render
+- MongoDB Atlas
+- GitHub
+- GitHub Desktop
+
+## 🗄️ Database Models
 
 HomeFeast uses MongoDB with Mongoose for database management.
 
-User
+### User
 
 Stores:
 
-Name
-Email
-Phone
-City
-Password
-Role
-Cook
+- Name
+- Email
+- Phone
+- City
+- Password
+- Role
+
+### Cook
 
 Stores:
 
-User Reference
-Business Name
-Description
-City
-Food Type
-Price Per Meal
-Verification Status
-Image
-Meal
+- User Reference
+- Business Name
+- Description
+- City
+- Food Type
+- Price Per Meal
+- Verification Status
+- Image
+
+### Meal
 
 Stores:
 
-Cook
-Name
-Description
-Category
-Meal Type
-Food Type
-Meal Plan
-Price
-Image
-Availability
-Order
+- Cook
+- Name
+- Description
+- Category
+- Meal Type
+- Food Type
+- Meal Plan
+- Price
+- Image
+- Availability
+
+### Order
 
 Stores:
 
-User
-Cook
-Meal
-Quantity
-Total Amount
-Delivery Date
-Order Status
-Subscription
+- User
+- Cook
+- Meal
+- Quantity
+- Total Amount
+- Delivery Date
+- Order Status
+
+### Subscription
 
 Stores:
 
-User
-Cook
-Plan Type
-Meal Type
-Start Date
-End Date
-Price
-Subscription Status
-🔄 Order & Subscription Flow
-Food Order Flow
+- User
+- Cook
+- Plan Type
+- Meal Type
+- Start Date
+- End Date
+- Price
+- Subscription Status
+
+## 🔄 Order & Subscription Flow
+
+### Food Order Flow
+
+```text
 Customer
    ↓
 Browse Providers
@@ -256,7 +271,11 @@ Cook Reviews Order
 Confirmed
    ↓
 Order Processing
-Subscription Flow
+```
+
+### Subscription Flow
+
+```text
 Customer
    ↓
 Select Meal Plan
@@ -268,19 +287,23 @@ Pending
 Cook Accepts
    ↓
 Active
+```
 
 If the cook rejects the subscription:
 
+```text
 Pending
    ↓
 Cook Rejects
    ↓
 Rejected
+```
 
 ## 🔌 Backend API Routes
 
 The backend provides REST API endpoints for the main application modules.
 
+```text
 /api/auth
 /api/cooks
 /api/meals
@@ -288,8 +311,11 @@ The backend provides REST API endpoints for the main application modules.
 /api/orders
 /api/admin
 /api/complaints
+```
 
 ## 📂 Project Structure
+
+```text
 HomeFeast
 │
 ├── client
@@ -311,30 +337,31 @@ HomeFeast
 ├── netlify.toml
 ├── .gitignore
 └── README.md
+```
 
 ## 📸 Screenshots
 
-🏠 Home Page
+### 🏠 Home Page
 
 HomeFeast provides a modern landing page featuring homemade food, featured cooks, cuisine categories, and platform information.
 
-🍱 Browse Providers
+### 🍱 Browse Providers
 
 Customers can browse, search, and filter available home cooks and tiffin providers.
 
-👨‍🍳 Cook Details
+### 👨‍🍳 Cook Details
 
 Customers can view cook information, meals, pricing, meal plans, and availability.
 
-👤 Customer Dashboard
+### 👤 Customer Dashboard
 
 Customers can manage their profile, orders, and subscriptions.
 
-👨‍🍳 Cook Dashboard
+### 👨‍🍳 Cook Dashboard
 
 Cooks can manage their profile, meals, customer orders, and subscriptions.
 
-🛡️ Admin Dashboard
+### 🛡️ Admin Dashboard
 
 Administrators can manage users, cooks, orders, subscriptions, categories, and complaints.
 
@@ -344,23 +371,23 @@ HomeFeast is built with responsive Tailwind CSS classes to provide a smooth expe
 
 Responsive layouts have been implemented for:
 
-Navigation
-Forms
-Cards
-Provider listings
-Cook details
-Dashboards
-Buttons
-Grid layouts
+- Navigation
+- Forms
+- Cards
+- Provider listings
+- Cook details
+- Dashboards
+- Buttons
+- Grid layouts
 
 ## 🚀 Deployment
 
 HomeFeast is deployed using:
 
-Frontend: Netlify
-Backend: Render
-Database: MongoDB Atlas
-Source Code: GitHub
+- **Frontend:** Netlify
+- **Backend:** Render
+- **Database:** MongoDB Atlas
+- **Source Code:** GitHub
 
 The frontend communicates with the deployed backend through the production REST API.
 
@@ -368,44 +395,44 @@ The frontend communicates with the deployed backend through the production REST 
 
 Through this project, I gained practical experience in:
 
-React Component Architecture
-React Router
-Tailwind CSS
-Responsive Web Design
-Vite
-REST API Development
-Node.js
-Express.js
-MongoDB Atlas
-Mongoose
-JWT Authentication
-bcryptjs
-Role-Based Authorization
-Protected Routes
-CRUD Operations
-Database Relationships
-Order Management
-Subscription Management
-Git & GitHub
-GitHub Desktop
-Netlify Deployment
-Render Deployment
+- React Component Architecture
+- React Router
+- Tailwind CSS
+- Responsive Web Design
+- Vite
+- REST API Development
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcryptjs
+- Role-Based Authorization
+- Protected Routes
+- CRUD Operations
+- Database Relationships
+- Order Management
+- Subscription Management
+- Git & GitHub
+- GitHub Desktop
+- Netlify Deployment
+- Render Deployment
 
 ## 🔮 Future Enhancements
 
 The following features can be considered for future versions:
 
-💳 Online Payment Integration
-🔔 Real-Time Notifications
-💬 In-App Chat Between Customers & Cooks
-📍 Live Order Tracking
-📱 Dedicated Mobile Application
-📊 Advanced Analytics
-🤖 AI-Based Meal Recommendations
+- 💳 Online Payment Integration
+- 🔔 Real-Time Notifications
+- 💬 In-App Chat Between Customers & Cooks
+- 📍 Live Order Tracking
+- 📱 Dedicated Mobile Application
+- 📊 Advanced Analytics
+- 🤖 AI-Based Meal Recommendations
 
 ## 👨‍💻 Author
 
-Mohammad Aatique Shaikh
+**Mohammad Aatique Shaikh**
 
 Software Developer | Data Analyst
 
